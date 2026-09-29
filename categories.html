@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories · Through Design Journal</title>
+    <meta name="description" content="Browse all categories from Through Design — interior design, architecture, materials, lighting, space planning, and the art of living well.">
+    <meta name="keywords" content="interior design categories, architecture, materials, lighting, space planning, design journal, through design">
+    <meta name="author" content="Through Design Editorial">
+    <link rel="canonical" href="https://www.throughdesign-journal.com/categories.html">
+    <style>
+        /* ---------- RESET & BASE ---------- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --paper: #faf8f5;
+            --ink: #1e1e1c;
+            --ink-light: #3d3d3a;
+            --accent: #b45f3a;
+            --accent-soft: #e8d9cf;
+            --border: #e3ddd6;
+            --border-strong: #cfc7bd;
+            --gray-bg: #f2efea;
+            --font-serif: 'Georgia', 'Times New Roman', 'Palatino', serif;
+            --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            --max-width: 1280px;
+            --content-width: 720px;
+            --radius: 4px;
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.03);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--paper);
+            color: var(--ink);
+            font-family: var(--font-sans);
+            font-size: 1rem;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+            border-top: 5px solid var(--accent);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            color: var(--ink);
+            text-decoration: none;
+            transition: color 0.15s ease, border-color 0.15s ease;
+        }
+
+        a:hover {
+            color: var(--accent);
+        }
+
+        ul, ol {
+            padding-left: 1.4rem;
+        }
+
+        /* ---------- TYPOGRAPHY ---------- */
+        h1, h2, h3, h4 {
+            font-family: var(--font-serif);
+            font-weight: 400;
+            line-height: 1.25;
+            letter-spacing: -0.01em;
+            color: var(--ink);
+        }
+
+        h1 {
+            font-size: 2.6rem;
+            margin-bottom: 0.8rem;
+        }
+
+        h2 {
+            font-size: 1.9rem;
+            margin: 2.2rem 0 1rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.4rem;
+        }
+
+        h3 {
+            font-size: 1.35rem;
+            margin: 1.8rem 0 0.6rem;
+        }
+
+        h4 {
+            font-size: 1.1rem;
+            margin: 1.5rem 0 0.4rem;
+            font-family: var(--font-sans);
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+        }
+
+        blockquote {
+            border-left: 3px solid var(--accent);
+            padding-left: 1.4rem;
+            margin: 1.8rem 0;
+            font-family: var(--font-serif);
+            font-size: 1.15rem;
+            font-style: italic;
+            color: var(--ink-light);
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 2rem 0;
+        }
+
+        /* ---------- LAYOUT ---------- */
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* ---------- HEADER ---------- */
+        .site-header {
+            border-bottom: 1px solid var(--border);
+            background: var(--paper);
+            padding: 0.9rem 0;
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .logo a {
+            display: flex;
+            align-items: baseline;
+            gap: 0.2rem;
+            font-family: var(--font-serif);
+            font-size: 1.8rem;
+            font-weight: 400;
+            letter-spacing: -0.02em;
+            color: var(--ink);
+        }
+
+        .logo .dot {
+            color: var(--accent);
+            font-size: 2.2rem;
+            line-height: 0.8;
+        }
+
+        .logo .tagline {
+            font-family: var(--font-sans);
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--ink-light);
+            margin-left: 0.5rem;
+            font-weight: 400;
+            opacity: 0.8;
+        }
+
+        .main-nav {
+            display: flex;
+            align-items: center;
+            gap: 0.2rem;
+            flex-wrap: wrap;
+        }
+
+        .main-nav a {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--ink-light);
+            padding: 0.35rem 0.9rem;
+            border-radius: 40px;
+            font-weight: 500;
+            border: 1px solid transparent;
+        }
+
+        .main-nav a:hover,
+        .main-nav a.active {
+            background: var(--gray-bg);
+            color: var(--ink);
+            border-color: var(--border);
+        }
+
+        /* ---------- CATEGORIES HERO ---------- */
+        .categories-hero {
+            background: var(--gray-bg);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 3.5rem 2.5rem;
+            margin: 2rem 0 1.5rem;
+            text-align: center;
+        }
+
+        .categories-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+        }
+
+        .categories-hero .subhead {
+            font-family: var(--font-serif);
+            font-size: 1.2rem;
+            font-style: italic;
+            color: var(--ink-light);
+            max-width: 620px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* ---------- CATEGORY GRID ---------- */
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.8rem;
+            margin: 2.5rem 0 3rem;
+        }
+
+        .category-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 2rem 1.6rem 1.6rem;
+            transition: transform 0.15s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .category-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.04);
+        }
+
+        .category-card .icon {
+            font-size: 2.2rem;
+            line-height: 1;
+            margin-bottom: 1rem;
+            color: var(--accent);
+            font-family: var(--font-serif);
+        }
+
+        .category-card h2 {
+            font-size: 1.6rem;
+            margin: 0 0 0.5rem;
+            border-bottom: none;
+            padding-bottom: 0;
+            font-family: var(--font-serif);
+        }
+
+        .category-card h2 a {
+            color: var(--ink);
+        }
+
+        .category-card h2 a:hover {
+            color: var(--accent);
+        }
+
+        .category-card p {
+            font-size: 0.92rem;
+            color: var(--ink-light);
+            margin-bottom: 1.2rem;
+            flex: 1;
+        }
+
+        .category-card .meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #8f8b84;
+            border-top: 1px solid var(--border);
+            padding-top: 0.9rem;
+            margin-top: 0.4rem;
+        }
+
+        .category-card .meta .count {
+            background: var(--gray-bg);
+            padding: 0.2rem 0.7rem;
+            border-radius: 20px;
+            font-weight: 500;
+            color: var(--ink-light);
+        }
+
+        .category-card .meta .arrow {
+            font-size: 1.1rem;
+            color: var(--accent);
+            transition: transform 0.15s;
+        }
+
+        .category-card:hover .meta .arrow {
+            transform: translateX(4px);
+        }
+
+        /* ---------- FEATURED CATEGORY ---------- */
+        .featured-category {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 2.5rem 2.5rem;
+            margin: 2rem 0 3rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            align-items: center;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .featured-category .featured-text {
+            flex: 1 1 300px;
+        }
+
+        .featured-category .featured-text h2 {
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-top: 0;
+            font-size: 2rem;
+        }
+
+        .featured-category .featured-text .label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .featured-category .featured-text p {
+            font-size: 1rem;
+            color: var(--ink-light);
+        }
+
+        .featured-category .featured-stats {
+            flex: 0 0 220px;
+            display: flex;
+            gap: 1.5rem;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+        }
+
+        .featured-category .stat {
+            text-align: center;
+            min-width: 70px;
+        }
+
+        .featured-category .stat .number {
+            font-family: var(--font-serif);
+            font-size: 2rem;
+            color: var(--ink);
+            line-height: 1.2;
+        }
+
+        .featured-category .stat .label-small {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--ink-light);
+        }
+
+        /* ---------- SIDEBAR / SUBSCRIBE (optional) ---------- */
+        .categories-footer-note {
+            text-align: center;
+            padding: 2.5rem 1rem 1rem;
+            border-top: 1px solid var(--border);
+            margin-top: 1rem;
+            font-style: italic;
+            color: var(--ink-light);
+            font-family: var(--font-serif);
+        }
+
+        /* ---------- FOOTER ---------- */
+        .site-footer {
+            background: var(--ink);
+            color: #d4d0c8;
+            padding: 3.5rem 0 2rem;
+            margin-top: 4rem;
+            border-top: 4px solid var(--accent);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 2.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .site-footer .logo a {
+            color: #f0ede8;
+            font-size: 1.6rem;
+        }
+
+        .site-footer .logo .dot {
+            color: var(--accent);
+        }
+
+        .site-footer p {
+            font-size: 0.85rem;
+            line-height: 1.7;
+            color: #a8a49c;
+            margin-top: 0.8rem;
+            max-width: 280px;
+        }
+
+        .footer-col h4 {
+            font-family: var(--font-sans);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #f0ede8;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .footer-col ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-col li {
+            margin-bottom: 0.6rem;
+        }
+
+        .footer-col a {
+            color: #a8a49c;
+            font-size: 0.85rem;
+        }
+
+        .footer-col a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #353531;
+            padding-top: 1.8rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            font-size: 0.75rem;
+            color: #8f8b84;
+        }
+
+        .footer-bottom a {
+            color: #b8b4ac;
+        }
+
+        /* ---------- RESPONSIVE ---------- */
+        @media (max-width: 1024px) {
+            .categories-hero {
+                padding: 2.5rem 1.5rem;
+            }
+            .categories-hero h1 {
+                font-size: 2.4rem;
+            }
+            .featured-category {
+                padding: 1.8rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .main-nav {
+                width: 100%;
+                justify-content: flex-start;
+                gap: 0.1rem;
+            }
+            .main-nav a {
+                font-size: 0.7rem;
+                padding: 0.3rem 0.6rem;
+            }
+            h1 { font-size: 1.8rem; }
+            h2 { font-size: 1.5rem; }
+            .categories-hero h1 { font-size: 2rem; }
+            .category-grid {
+                grid-template-columns: 1fr;
+                gap: 1.4rem;
+            }
+            .featured-category {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .featured-category .featured-stats {
+                justify-content: flex-start;
+                width: 100%;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 1.8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 1rem;
+            }
+            .logo .tagline {
+                display: none;
+            }
+            .categories-hero {
+                padding: 2rem 1.2rem;
+            }
+            .categories-hero h1 {
+                font-size: 1.7rem;
+            }
+            .category-card {
+                padding: 1.5rem 1.2rem;
+            }
+            .featured-category {
+                padding: 1.5rem 1.2rem;
+            }
+        }
+
+        .visually-hidden {
+            position: absolute;
+            width: 1px; height: 1px;
+            padding: 0; margin: -1px;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- ========== HEADER ========== -->
+    <header class="site-header" role="banner">
+        <div class="container header-inner">
+            <div class="logo">
+                <a href="index.html" aria-label="Through Design home">
+                    Through Design<span class="dot">.</span>
+                    <span class="tagline">Interior · Architecture · Craft</span>
+                </a>
+            </div>
+            <nav class="main-nav" role="navigation" aria-label="Primary">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="terms.html">Terms Of Privacy</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="cookies.html">Cookies Policy</a>
+                <a href="disclaimer.html">Disclaimer</a>
+                <a href="categories.html" class="active">Categories</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ========== MAIN ========== -->
+    <main class="container" role="main">
+        <!-- HERO -->
+        <section class="categories-hero">
+            <h1>Categories</h1>
+            <p class="subhead">Explore every facet of design — from interiors and architecture to materials, lighting, and the subtle art of living well.</p>
+        </section>
+
+        <!-- FEATURED CATEGORY (EDITOR'S PICK) -->
+        <section class="featured-category" aria-label="Featured category">
+            <div class="featured-text">
+                <span class="label">Editor’s pick</span>
+                <h2>Interior Design</h2>
+                <p>Our most-read category. Dive into residential and commercial interiors, styling, colour theory, and the details that make a room feel like home. Curated by our editors in Copenhagen and Milan.</p>
+                <p style="font-size:0.9rem; margin-bottom:0;"><a href="index.html" style="font-weight:500;">Browse all interior design articles →</a></p>
+            </div>
+            <div class="featured-stats">
+                <div class="stat">
+                    <div class="number">42</div>
+                    <div class="label-small">Articles</div>
+                </div>
+                <div class="stat">
+                    <div class="number">8</div>
+                    <div class="label-small">Guides</div>
+                </div>
+                <div class="stat">
+                    <div class="number">3</div>
+                    <div class="label-small">Series</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CATEGORY GRID -->
+        <div class="category-grid" role="list">
+            <!-- 1. Interior Design -->
+            <article class="category-card" role="listitem">
+                <div class="icon" aria-hidden="true">⌂</div>
+                <h2><a href="index.html">Interior Design</a></h2>
+                <p>Residential and commercial interiors, styling, colour, and the art of making a space feel personal.</p>
+                <div class="meta">
+                    <span class="count">42 articles</span>
+                    <span class="arrow">→</span>
+                </div>
+            </article>
+
+            <!-- 2. Architecture -->
+            <article class="category-card" role="listitem">
+                <div class="icon" aria-hidden="true">⌘</div>
+                <h2><a href="index.html">Architecture</a></h2>
+                <p>Buildings, structures, and the built environment — from iconic landmarks to quiet residential projects.</p>
+                <div class="meta">
+                    <span class="count">28 articles</span>
+                    <span class="arrow">→</span>
+                </div>
+            </article>
+
+            <!-- 3. Materials -->
+            <article class="category-card" role="listitem">
+                <div class="icon" aria-hidden="true">◈</div>
+                <h2><a href="index.html">Materials</a></h2>
+                <p>Wood, stone, metal, glass, and emerging sustainable materials — how they shape our spaces and senses.</p>
+                <div class="meta">
+                    <span class="count">19 articles</span>
+                    <span class="arrow">→</span>
+                </div>
+            </article>
+
+            <!-- 4. Lighting -->
+            <article class="category-card" role="listitem">
+                <div class="icon" aria-hidden="true">☀</div>
+                <h2><a href="index.html">Lighting</a></h2>
+                <p>Natural and artificial light, fixtures, and the role of illumination in mood, function, and well-being.</p>
+                <div class="meta">
+                    <span class="count">14 articles</span>
+                    <span class="arrow">→</span>
+                </div>
+            </article>
+
+            <!-- 5. Space Planning -->
+            <article class="category-card" role="listitem">
+                <div class="icon" aria-hidden="true">⬡</div>
+                <h2><a href="index.html">Space Planning</a></h2>
+                <p>Layouts, flow, zoning, and the practical geometry behind comfortable, efficient environments.</p>
+                <div class="meta">
+                    <span class="count">11 articles</span>
+                    <span class="arrow">→</span>
+                </div>
+            </article>
+
+            <!-- 6. Craft & Making (additional) -->
+            <article class="category-card" role="listitem">
+                <div class="icon" aria-hidden="true">✧</div>
+                <h2><a href="index.html">Craft &amp; Making</a></h2>
+                <p>Artisans, techniques, and the slow processes behind objects and finishes we live with every day.</p>
+                <div class="meta">
+                    <span class="count">9 articles</span>
+                    <span class="arrow">→</span>
+                </div>
+            </article>
+
+            <!-- 7. Art of Living (additional) -->
+            <article class="category-card" role="listitem">
+                <div class="icon" aria-hidden="true">❋</div>
+                <h2><a href="index.html">Art of Living</a></h2>
+                <p>Rituals, routines, and the quiet philosophy of a well-considered home and daily life.</p>
+                <div class="meta">
+                    <span class="count">7 articles</span>
+                    <span class="arrow">→</span>
+                </div>
+            </article>
+
+            <!-- 8. Travel & Places (additional) -->
+            <article class="category-card" role="listitem">
+                <div class="icon" aria-hidden="true">⌖</div>
+                <h2><a href="index.html">Travel &amp; Places</a></h2>
+                <p>Design destinations, studios, and spaces worth a detour — from Kyoto to Copenhagen.</p>
+                <div class="meta">
+                    <span class="count">6 articles</span>
+                    <span class="arrow">→</span>
+                </div>
+            </article>
+        </div>
+
+        <!-- FOOTER NOTE -->
+        <div class="categories-footer-note">
+            <p>Every category is curated by our editorial team. Have a suggestion? <a href="contact.html">Write to us.</a></p>
+        </div>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="logo">
+                        <a href="index.html">Through Design<span class="dot">.</span></a>
+                    </div>
+                    <p>An independent journal about the spaces we inhabit — and the ideas that shape them. Published by a small editorial team in Copenhagen and Milan.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Sections</h4>
+                    <ul>
+                        <li><a href="categories.html">Interior Design</a></li>
+                        <li><a href="categories.html">Architecture</a></li>
+                        <li><a href="categories.html">Materials</a></li>
+                        <li><a href="categories.html">Lighting</a></li>
+                        <li><a href="categories.html">Space Planning</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Use</a></li>
+                        <li><a href="cookies.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow</h4>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Pinterest</a></li>
+                        <li><a href="#">Flipboard</a></li>
+                        <li><a href="#">RSS Feed</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2025 Through Design Editorial. All rights reserved.</span>
+                <span><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="cookies.html">Cookies</a></span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Simple script (consistent with terms page) -->
+    <script>
+        (function() {
+            // Smooth scroll for in-page navigation (if any)
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href === '#') return;
+                    const target = document.querySelector(href);
+                    if (target) {
+                        e.preventDefault();
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            });
+            console.log('Through Design · Categories page loaded');
+        })();
+    </script>
+</body>
+</html>

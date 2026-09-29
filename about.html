@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About · Through Design Journal</title>
+    <meta name="description" content="Through Design is an independent editorial publication exploring interior design, architecture, materials, and the art of living well. Learn about our editorial team and mission.">
+    <meta name="keywords" content="about through design, editorial team, interior design journal, architecture publication, independent design media">
+    <meta name="author" content="Through Design Editorial">
+    <link rel="canonical" href="https://www.throughdesign-journal.com/about.html">
+    <style>
+        /* ---------- RESET & BASE ---------- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --paper: #faf8f5;
+            --ink: #1e1e1c;
+            --ink-light: #3d3d3a;
+            --accent: #b45f3a;
+            --accent-soft: #e8d9cf;
+            --border: #e3ddd6;
+            --border-strong: #cfc7bd;
+            --gray-bg: #f2efea;
+            --font-serif: 'Georgia', 'Times New Roman', 'Palatino', serif;
+            --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            --max-width: 1280px;
+            --content-width: 720px;
+            --radius: 4px;
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.03);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--paper);
+            color: var(--ink);
+            font-family: var(--font-sans);
+            font-size: 1rem;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+            border-top: 5px solid var(--accent);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            color: var(--ink);
+            text-decoration: none;
+            transition: color 0.15s ease, border-color 0.15s ease;
+        }
+
+        a:hover {
+            color: var(--accent);
+        }
+
+        ul, ol {
+            padding-left: 1.4rem;
+        }
+
+        /* ---------- TYPOGRAPHY ---------- */
+        h1, h2, h3, h4 {
+            font-family: var(--font-serif);
+            font-weight: 400;
+            line-height: 1.25;
+            letter-spacing: -0.01em;
+            color: var(--ink);
+        }
+
+        h1 {
+            font-size: 2.6rem;
+            margin-bottom: 0.8rem;
+        }
+
+        h2 {
+            font-size: 1.9rem;
+            margin: 2.2rem 0 1rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.4rem;
+        }
+
+        h3 {
+            font-size: 1.35rem;
+            margin: 1.8rem 0 0.6rem;
+        }
+
+        h4 {
+            font-size: 1.1rem;
+            margin: 1.5rem 0 0.4rem;
+            font-family: var(--font-sans);
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+        }
+
+        blockquote {
+            border-left: 3px solid var(--accent);
+            padding-left: 1.4rem;
+            margin: 1.8rem 0;
+            font-family: var(--font-serif);
+            font-size: 1.15rem;
+            font-style: italic;
+            color: var(--ink-light);
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 2rem 0;
+        }
+
+        /* ---------- LAYOUT ---------- */
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .about-layout {
+            display: flex;
+            gap: 3rem;
+            margin-top: 2.5rem;
+        }
+
+        .main-content {
+            flex: 1 1 68%;
+            min-width: 0;
+        }
+
+        .sidebar {
+            flex: 0 0 320px;
+            max-width: 320px;
+        }
+
+        /* ---------- HEADER ---------- */
+        .site-header {
+            border-bottom: 1px solid var(--border);
+            background: var(--paper);
+            padding: 0.9rem 0;
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .logo a {
+            display: flex;
+            align-items: baseline;
+            gap: 0.2rem;
+            font-family: var(--font-serif);
+            font-size: 1.8rem;
+            font-weight: 400;
+            letter-spacing: -0.02em;
+            color: var(--ink);
+        }
+
+        .logo .dot {
+            color: var(--accent);
+            font-size: 2.2rem;
+            line-height: 0.8;
+        }
+
+        .logo .tagline {
+            font-family: var(--font-sans);
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--ink-light);
+            margin-left: 0.5rem;
+            font-weight: 400;
+            opacity: 0.8;
+        }
+
+        .main-nav {
+            display: flex;
+            align-items: center;
+            gap: 0.2rem;
+            flex-wrap: wrap;
+        }
+
+        .main-nav a {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--ink-light);
+            padding: 0.35rem 0.9rem;
+            border-radius: 40px;
+            font-weight: 500;
+            border: 1px solid transparent;
+        }
+
+        .main-nav a:hover,
+        .main-nav a.active {
+            background: var(--gray-bg);
+            color: var(--ink);
+            border-color: var(--border);
+        }
+
+        /* ---------- ABOUT HERO ---------- */
+        .about-hero {
+            background: var(--gray-bg);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 3rem 2.5rem;
+            margin: 2rem 0 1rem;
+            text-align: center;
+        }
+
+        .about-hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .about-hero .subhead {
+            font-family: var(--font-serif);
+            font-size: 1.2rem;
+            font-style: italic;
+            color: var(--ink-light);
+            max-width: 620px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* ---------- TEAM GRID ---------- */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 1.5rem 0 2rem;
+        }
+
+        .team-member {
+            text-align: center;
+        }
+
+        .team-avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: var(--accent-soft);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-serif);
+            font-size: 2.2rem;
+            color: var(--accent);
+            font-weight: 600;
+            margin: 0 auto 1rem;
+            border: 2px solid white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+
+        .team-member h3 {
+            font-size: 1.15rem;
+            margin: 0 0 0.2rem;
+            font-family: var(--font-sans);
+            font-weight: 600;
+        }
+
+        .team-member .role {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--ink-light);
+            margin-bottom: 0.6rem;
+        }
+
+        .team-member p {
+            font-size: 0.85rem;
+            color: var(--ink-light);
+            line-height: 1.6;
+        }
+
+        /* ---------- VALUES LIST ---------- */
+        .values-list {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0;
+        }
+
+        .values-list li {
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+        }
+
+        .values-list li:last-child {
+            border-bottom: none;
+        }
+
+        .values-list .value-num {
+            font-family: var(--font-serif);
+            font-size: 1.4rem;
+            color: var(--accent);
+            line-height: 1;
+            min-width: 2rem;
+        }
+
+        .values-list .value-text {
+            font-size: 0.95rem;
+            color: var(--ink-light);
+        }
+
+        .values-list .value-text strong {
+            color: var(--ink);
+            font-weight: 600;
+        }
+
+        /* ---------- SIDEBAR ---------- */
+        .sidebar-widget {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1.5rem 1.4rem;
+            margin-bottom: 2rem;
+        }
+
+        .sidebar-widget h3 {
+            font-family: var(--font-sans);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: 600;
+            color: var(--ink-light);
+            margin: 0 0 1rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.5rem;
+        }
+
+        .sidebar-widget ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar-widget li {
+            margin-bottom: 0.7rem;
+            font-size: 0.9rem;
+            border-bottom: 1px dotted var(--border);
+            padding-bottom: 0.7rem;
+        }
+
+        .sidebar-widget li:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .sidebar-widget li a {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            color: var(--ink);
+        }
+
+        .sidebar-widget li a:hover {
+            color: var(--accent);
+        }
+
+        .sidebar-widget .count {
+            font-size: 0.7rem;
+            color: #8f8f88;
+        }
+
+        .sidebar-widget .author-info {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .sidebar-widget .author-avatar {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: var(--accent-soft);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-serif);
+            font-size: 1.1rem;
+            color: var(--accent);
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+
+        .sidebar-widget .author-name {
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .sidebar-widget .author-role {
+            font-size: 0.7rem;
+            color: var(--ink-light);
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+
+        .sidebar-widget .small-note {
+            font-size: 0.8rem;
+            color: var(--ink-light);
+            margin-top: 0.5rem;
+            line-height: 1.5;
+        }
+
+        .sidebar-widget .newsletter-mini input {
+            width: 100%;
+            padding: 0.6rem 0.8rem;
+            border: 1px solid var(--border-strong);
+            border-radius: var(--radius);
+            font-size: 0.85rem;
+            margin-bottom: 0.5rem;
+            font-family: var(--font-sans);
+        }
+
+        .sidebar-widget .newsletter-mini button {
+            width: 100%;
+            background: var(--ink);
+            color: white;
+            border: none;
+            padding: 0.6rem;
+            border-radius: var(--radius);
+            font-size: 0.8rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            cursor: pointer;
+            font-weight: 500;
+            transition: background 0.15s;
+        }
+
+        .sidebar-widget .newsletter-mini button:hover {
+            background: var(--accent);
+        }
+
+        /* ---------- FOOTER ---------- */
+        .site-footer {
+            background: var(--ink);
+            color: #d4d0c8;
+            padding: 3.5rem 0 2rem;
+            margin-top: 4rem;
+            border-top: 4px solid var(--accent);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 2.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .site-footer .logo a {
+            color: #f0ede8;
+            font-size: 1.6rem;
+        }
+
+        .site-footer .logo .dot {
+            color: var(--accent);
+        }
+
+        .site-footer p {
+            font-size: 0.85rem;
+            line-height: 1.7;
+            color: #a8a49c;
+            margin-top: 0.8rem;
+            max-width: 280px;
+        }
+
+        .footer-col h4 {
+            font-family: var(--font-sans);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #f0ede8;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .footer-col ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-col li {
+            margin-bottom: 0.6rem;
+        }
+
+        .footer-col a {
+            color: #a8a49c;
+            font-size: 0.85rem;
+        }
+
+        .footer-col a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #353531;
+            padding-top: 1.8rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            font-size: 0.75rem;
+            color: #8f8b84;
+        }
+
+        .footer-bottom a {
+            color: #b8b4ac;
+        }
+
+        /* ---------- RESPONSIVE ---------- */
+        @media (max-width: 1024px) {
+            .about-layout {
+                flex-direction: column;
+                gap: 2rem;
+            }
+            .sidebar {
+                flex: 1 1 auto;
+                max-width: 100%;
+            }
+            .about-hero {
+                padding: 2.5rem 1.5rem;
+            }
+            .about-hero h1 {
+                font-size: 2.2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .main-nav {
+                width: 100%;
+                justify-content: flex-start;
+                gap: 0.1rem;
+            }
+            .main-nav a {
+                font-size: 0.7rem;
+                padding: 0.3rem 0.6rem;
+            }
+            h1 { font-size: 1.8rem; }
+            h2 { font-size: 1.5rem; }
+            .about-hero h1 { font-size: 1.8rem; }
+            .team-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 1.8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 1rem;
+            }
+            .logo .tagline {
+                display: none;
+            }
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+            .values-list li {
+                flex-direction: column;
+                gap: 0.3rem;
+            }
+        }
+
+        .visually-hidden {
+            position: absolute;
+            width: 1px; height: 1px;
+            padding: 0; margin: -1px;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- ========== HEADER ========== -->
+    <header class="site-header" role="banner">
+        <div class="container header-inner">
+            <div class="logo">
+                <a href="index.html" aria-label="Through Design home">
+                    Through Design<span class="dot">.</span>
+                    <span class="tagline">Interior · Architecture · Craft</span>
+                </a>
+            </div>
+            <nav class="main-nav" role="navigation" aria-label="Primary">
+                <a href="index.html">Home</a>
+                <a href="about.html" class="active">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="terms.html">Terms Of Privacy</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="cookies.html">Cookies Policy</a>
+                <a href="disclaimer.html">Disclaimer</a>
+                <a href="categories.html">Categories</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ========== MAIN ========== -->
+    <main class="container" role="main">
+        <!-- ABOUT HERO -->
+        <section class="about-hero">
+            <h1>About Through Design</h1>
+            <p class="subhead">An independent editorial journal exploring the spaces we inhabit — and the ideas that shape them.</p>
+        </section>
+
+        <!-- ABOUT LAYOUT: MAIN + SIDEBAR -->
+        <div class="about-layout">
+            <!-- MAIN COLUMN -->
+            <div class="main-content">
+                <section aria-label="Our story">
+                    <h2>Our Story</h2>
+                    <p>Through Design began in 2019 as a shared notebook between two editors — one in Copenhagen, one in Milan — who were tired of the same glossy, surface-level design coverage. We wanted to write about the <em>why</em> behind spaces: the structural decisions, the material honesty, the quiet psychology of a well-planned room.</p>
+                    <p>Today, we are a small, independent publication with a global readership. We publish long-form guides, critical essays, and practical knowledge for anyone who cares about the built environment — from architects and designers to homeowners and curious readers. We have no sponsored content, no pay-to-play features, and no trend-chasing. Just useful, considered writing.</p>
+                    <blockquote>“Design is not decoration. It is the thoughtful arrangement of space, light, and material to support how we actually live.”</blockquote>
+                </section>
+
+                <section aria-label="Our editorial team">
+                    <h2>The Editorial Team</h2>
+                    <div class="team-grid">
+                        <div class="team-member">
+                            <div class="team-avatar">EM</div>
+                            <h3>Elena Marchetti</h3>
+                            <div class="role">Editor-in-Chief</div>
+                            <p>Architect and writer based in Milan. Formerly at Domus and Abitare. Elena leads our architecture and space planning coverage.</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="team-avatar">MB</div>
+                            <h3>Marco Bellini</h3>
+                            <div class="role">Senior Editor</div>
+                            <p>Interior designer and lighting specialist in Copenhagen. Marco writes about materials, furniture, and the craft of making rooms feel right.</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="team-avatar">SL</div>
+                            <h3>Sofia Lindqvist</h3>
+                            <div class="role">Contributing Editor</div>
+                            <p>Material scientist and sustainable design researcher. Sofia covers honest materials, low-carbon building, and the circular economy.</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="team-avatar">JD</div>
+                            <h3>James Doyle</h3>
+                            <div class="role">Photo Editor</div>
+                            <p>Architectural photographer and visual storyteller. James commissions and curates all imagery for Through Design.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section aria-label="Our editorial principles">
+                    <h2>What We Stand For</h2>
+                    <ul class="values-list">
+                        <li>
+                            <span class="value-num">01</span>
+                            <span class="value-text"><strong>Independence over influence.</strong> We do not accept sponsored posts, native advertising, or free products in exchange for coverage. Our recommendations are our own.</span>
+                        </li>
+                        <li>
+                            <span class="value-num">02</span>
+                            <span class="value-text"><strong>Depth over speed.</strong> We publish fewer articles than most, but each one is researched, fact-checked, and written to last. No listicles, no clickbait.</span>
+                        </li>
+                        <li>
+                            <span class="value-num">03</span>
+                            <span class="value-text"><strong>Materials matter.</strong> We believe the tactile reality of a space — the stone, the wood, the light — is as important as its form. We write about both.</span>
+                        </li>
+                        <li>
+                            <span class="value-num">04</span>
+                            <span class="value-text"><strong>Accessible expertise.</strong> Our writing is rigorous but jargon-free. Whether you are a professional or a curious homeowner, you will find something useful here.</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <section aria-label="How we work">
+                    <h2>How We Work</h2>
+                    <p>Every article on Through Design goes through a three-stage editorial process: <strong>research</strong> (primary sources, site visits, and expert interviews), <strong>writing</strong> (by a named editor with subject expertise), and <strong>review</strong> (a second editor fact-checks and edits for clarity). We disclose any potential conflicts of interest at the bottom of relevant articles.</p>
+                    <p>We are reader-supported. Our revenue comes from our optional newsletter subscriptions and from affiliate partnerships with independent bookshops and material suppliers — never from display advertising or sponsored content. If you value what we do, the best way to support us is to subscribe to our dispatch or share our work with a friend.</p>
+                    <p>We are always happy to hear from readers. If you have a question, a correction, or a story idea, please <a href="contact.html">get in touch</a>.</p>
+                </section>
+
+                <!-- SIMPLE NEWSLETTER BLOCK -->
+                <section class="newsletter-block" style="background: var(--gray-bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 2.5rem 2rem; margin: 3rem 0 2rem; text-align: center;">
+                    <h2 style="border: none; font-size: 1.6rem; margin: 0 0 0.5rem;">The Through Design Dispatch</h2>
+                    <p style="max-width: 500px; margin: 0 auto 1.5rem; color: var(--ink-light); font-size: 0.95rem;">Long reads, material studies, and spatial ideas — delivered twice a month.</p>
+                    <form class="newsletter-form" style="display: flex; gap: 0.6rem; max-width: 440px; margin: 0 auto; flex-wrap: wrap; justify-content: center;" onsubmit="event.preventDefault(); alert('Thank you — you are subscribed (demo).');">
+                        <input type="email" placeholder="Your email address" required aria-label="Email address" style="flex: 1; min-width: 200px; padding: 0.8rem 1rem; border: 1px solid var(--border-strong); border-radius: var(--radius); font-size: 0.9rem; font-family: var(--font-sans); background: white;">
+                        <button type="submit" style="background: var(--ink); color: white; border: none; padding: 0.8rem 1.8rem; border-radius: var(--radius); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600; cursor: pointer; transition: background 0.15s; white-space: nowrap;">Subscribe</button>
+                    </form>
+                    <p style="font-size:0.7rem; color:#8f8f88; margin-top:1rem; margin-bottom:0;">We never share your email. Unsubscribe anytime.</p>
+                </section>
+            </div>
+
+            <!-- SIDEBAR -->
+            <aside class="sidebar" role="complementary">
+                <!-- Quick facts -->
+                <div class="sidebar-widget">
+                    <h3>Through Design at a Glance</h3>
+                    <ul>
+                        <li><a href="#">Founded <span class="count">2019</span></a></li>
+                        <li><a href="#">Based in <span class="count">Copenhagen & Milan</span></a></li>
+                        <li><a href="#">Articles published <span class="count">140+</span></a></li>
+                        <li><a href="#">Editorial team <span class="count">4</span></a></li>
+                        <li><a href="#">Sponsored posts <span class="count">0</span></a></li>
+                    </ul>
+                </div>
+
+                <!-- Editors -->
+                <div class="sidebar-widget">
+                    <h3>Editor’s Picks</h3>
+                    <ul>
+                        <li><a href="#">The Honest Material: Why Travertine Endures <span class="count">14 min</span></a></li>
+                        <li><a href="#">Floor Plan Myths: Circulation Before Furniture <span class="count">11 min</span></a></li>
+                        <li><a href="#">Small Bathrooms That Live Large <span class="count">9 min</span></a></li>
+                        <li><a href="#">The Case for Fewer, Better Objects <span class="count">7 min</span></a></li>
+                    </ul>
+                </div>
+
+                <!-- Mini newsletter -->
+                <div class="sidebar-widget newsletter-mini">
+                    <h3>Weekly Digest</h3>
+                    <p class="small-note" style="margin-bottom:0.8rem;">One thoughtful email each Sunday.</p>
+                    <form onsubmit="event.preventDefault(); alert('Subscribed (demo).');">
+                        <input type="email" placeholder="Email address" required aria-label="Email">
+                        <button type="submit">Join</button>
+                    </form>
+                </div>
+
+                <!-- Contact note -->
+                <div class="sidebar-widget">
+                    <h3>Get in Touch</h3>
+                    <p class="small-note">We welcome pitches, corrections, and reader questions. <a href="contact.html">Contact the editors →</a></p>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="logo">
+                        <a href="index.html">Through Design<span class="dot">.</span></a>
+                    </div>
+                    <p>An independent journal about the spaces we inhabit — and the ideas that shape them. Published by a small editorial team in Copenhagen and Milan.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Sections</h4>
+                    <ul>
+                        <li><a href="index.html">Interior Design</a></li>
+                        <li><a href="index.html">Architecture</a></li>
+                        <li><a href="index.html">Materials</a></li>
+                        <li><a href="index.html">Lighting</a></li>
+                        <li><a href="index.html">Space Planning</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Use</a></li>
+                        <li><a href="cookies.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow</h4>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Pinterest</a></li>
+                        <li><a href="#">Flipboard</a></li>
+                        <li><a href="#">RSS Feed</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2025 Through Design Editorial. All rights reserved.</span>
+                <span><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="cookies.html">Cookies</a></span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Simple script for demo form alerts -->
+    <script>
+        (function() {
+            // The newsletter forms already have inline onsubmit alerts
+            // This is a placeholder for any future interactive elements on the about page
+            console.log('Through Design · About page loaded');
+        })();
+    </script>
+</body>
+</html>

@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies Policy · Through Design Journal</title>
+    <meta name="description" content="How Through Design Journal uses cookies and similar tracking technologies.">
+    <meta name="keywords" content="cookies policy, tracking, through design, editorial journal">
+    <meta name="author" content="Through Design Editorial">
+    <link rel="canonical" href="https://www.throughdesign-journal.com/cookies.html">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Cookies Policy · Through Design Journal">
+    <meta property="og:description" content="How Through Design Journal uses cookies and similar tracking technologies.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.throughdesign-journal.com/cookies.html">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&h=630&fit=crop">
+    <style>
+        /* ---------- RESET & BASE ---------- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --paper: #faf8f5;
+            --ink: #1e1e1c;
+            --ink-light: #3d3d3a;
+            --accent: #b45f3a;
+            --accent-soft: #e8d9cf;
+            --border: #e3ddd6;
+            --border-strong: #cfc7bd;
+            --gray-bg: #f2efea;
+            --font-serif: 'Georgia', 'Times New Roman', 'Palatino', serif;
+            --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            --max-width: 1280px;
+            --content-width: 720px;
+            --sidebar-width: 320px;
+            --radius: 4px;
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.03);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--paper);
+            color: var(--ink);
+            font-family: var(--font-sans);
+            font-size: 1rem;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+            border-top: 5px solid var(--accent);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            color: var(--ink);
+            text-decoration: none;
+            transition: color 0.15s ease, border-color 0.15s ease;
+        }
+
+        a:hover {
+            color: var(--accent);
+        }
+
+        ul, ol {
+            padding-left: 1.4rem;
+        }
+
+        /* ---------- TYPOGRAPHY ---------- */
+        h1, h2, h3, h4 {
+            font-family: var(--font-serif);
+            font-weight: 400;
+            line-height: 1.25;
+            letter-spacing: -0.01em;
+            color: var(--ink);
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: 1.9rem;
+            margin: 2.2rem 0 1rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.4rem;
+        }
+
+        h3 {
+            font-size: 1.35rem;
+            margin: 1.8rem 0 0.6rem;
+        }
+
+        h4 {
+            font-size: 1.1rem;
+            margin: 1.5rem 0 0.4rem;
+            font-family: var(--font-sans);
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+        }
+
+        blockquote {
+            border-left: 3px solid var(--accent);
+            padding-left: 1.4rem;
+            margin: 1.8rem 0;
+            font-family: var(--font-serif);
+            font-size: 1.15rem;
+            font-style: italic;
+            color: var(--ink-light);
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 2rem 0;
+        }
+
+        /* ---------- LAYOUT ---------- */
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .blog-layout {
+            display: flex;
+            gap: 3rem;
+            margin-top: 2.5rem;
+        }
+
+        .main-content {
+            flex: 1 1 68%;
+            min-width: 0;
+        }
+
+        .sidebar {
+            flex: 0 0 var(--sidebar-width);
+            max-width: var(--sidebar-width);
+        }
+
+        /* ---------- HEADER ---------- */
+        .site-header {
+            border-bottom: 1px solid var(--border);
+            background: var(--paper);
+            padding: 0.9rem 0;
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .logo a {
+            display: flex;
+            align-items: baseline;
+            gap: 0.2rem;
+            font-family: var(--font-serif);
+            font-size: 1.8rem;
+            font-weight: 400;
+            letter-spacing: -0.02em;
+            color: var(--ink);
+        }
+
+        .logo .dot {
+            color: var(--accent);
+            font-size: 2.2rem;
+            line-height: 0.8;
+        }
+
+        .logo .tagline {
+            font-family: var(--font-sans);
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--ink-light);
+            margin-left: 0.5rem;
+            font-weight: 400;
+            opacity: 0.8;
+        }
+
+        .main-nav {
+            display: flex;
+            align-items: center;
+            gap: 0.2rem;
+            flex-wrap: wrap;
+        }
+
+        .main-nav a {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--ink-light);
+            padding: 0.35rem 0.9rem;
+            border-radius: 40px;
+            font-weight: 500;
+            border: 1px solid transparent;
+        }
+
+        .main-nav a:hover,
+        .main-nav a.active {
+            background: var(--gray-bg);
+            color: var(--ink);
+            border-color: var(--border);
+        }
+
+        /* ---------- COOKIES SPECIFIC ---------- */
+        .legal-hero {
+            background: var(--gray-bg);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 2.5rem 2.5rem 2rem;
+            margin: 2rem 0 2.5rem;
+            text-align: left;
+        }
+
+        .legal-hero h1 {
+            font-size: 2.4rem;
+            margin-bottom: 0.6rem;
+            border: none;
+            padding: 0;
+        }
+
+        .legal-hero p {
+            font-size: 1.1rem;
+            color: var(--ink-light);
+            max-width: 620px;
+            margin-bottom: 0;
+        }
+
+        .legal-meta {
+            font-size: 0.8rem;
+            color: var(--ink-light);
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .legal-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        .legal-meta strong {
+            font-weight: 600;
+            color: var(--ink);
+        }
+
+        .cookies-content {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 2.5rem 2.8rem;
+            margin-bottom: 3rem;
+        }
+
+        .cookies-content h2 {
+            margin-top: 2rem;
+            font-size: 1.6rem;
+        }
+
+        .cookies-content h2:first-of-type {
+            margin-top: 0.2rem;
+        }
+
+        .cookies-content h3 {
+            font-size: 1.2rem;
+            margin: 1.5rem 0 0.5rem;
+            font-family: var(--font-sans);
+            font-weight: 600;
+        }
+
+        .cookies-content p {
+            color: var(--ink-light);
+            font-size: 0.98rem;
+        }
+
+        .cookies-content ul {
+            color: var(--ink-light);
+            font-size: 0.98rem;
+            line-height: 1.8;
+            margin-bottom: 1.2rem;
+        }
+
+        .cookies-content li {
+            margin-bottom: 0.3rem;
+        }
+
+        .cookies-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.8rem 0 2rem;
+            font-size: 0.88rem;
+        }
+
+        .cookies-table th {
+            background: var(--gray-bg);
+            text-align: left;
+            padding: 0.8rem 1rem;
+            font-weight: 600;
+            color: var(--ink);
+            border: 1px solid var(--border);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .cookies-table td {
+            padding: 0.8rem 1rem;
+            border: 1px solid var(--border);
+            color: var(--ink-light);
+            vertical-align: top;
+        }
+
+        .cookies-table tr:last-child td {
+            border-bottom: 1px solid var(--border);
+        }
+
+        .cookies-table .cat {
+            font-weight: 600;
+            color: var(--ink);
+            white-space: nowrap;
+        }
+
+        .highlight-box {
+            background: var(--accent-soft);
+            border-left: 4px solid var(--accent);
+            padding: 1.2rem 1.5rem;
+            border-radius: 0 var(--radius) var(--radius) 0;
+            margin: 2rem 0;
+            font-size: 0.95rem;
+            color: var(--ink-light);
+        }
+
+        .highlight-box strong {
+            color: var(--accent);
+        }
+
+        .button-row {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--ink);
+            color: white;
+            border: none;
+            padding: 0.8rem 1.8rem;
+            border-radius: var(--radius);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.15s;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background: var(--accent);
+            color: white;
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--ink);
+            border: 1px solid var(--border-strong);
+        }
+
+        .btn-outline:hover {
+            background: var(--gray-bg);
+            color: var(--ink);
+            border-color: var(--ink-light);
+        }
+
+        /* ---------- SIDEBAR WIDGETS ---------- */
+        .sidebar-widget {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1.5rem 1.4rem;
+            margin-bottom: 2rem;
+        }
+
+        .sidebar-widget h3 {
+            font-family: var(--font-sans);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: 600;
+            color: var(--ink-light);
+            margin: 0 0 1rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.5rem;
+        }
+
+        .sidebar-widget ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar-widget li {
+            margin-bottom: 0.7rem;
+            font-size: 0.9rem;
+            border-bottom: 1px dotted var(--border);
+            padding-bottom: 0.7rem;
+        }
+
+        .sidebar-widget li:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .sidebar-widget li a {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            color: var(--ink);
+        }
+
+        .sidebar-widget li a:hover {
+            color: var(--accent);
+        }
+
+        .sidebar-widget .count {
+            font-size: 0.7rem;
+            color: #8f8f88;
+        }
+
+        .sidebar-widget .author-info {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .sidebar-widget .author-avatar {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: var(--accent-soft);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-serif);
+            font-size: 1.1rem;
+            color: var(--accent);
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+
+        .sidebar-widget .author-name {
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .sidebar-widget .author-role {
+            font-size: 0.7rem;
+            color: var(--ink-light);
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+
+        .sidebar-widget .small-note {
+            font-size: 0.8rem;
+            color: var(--ink-light);
+            margin-top: 0.5rem;
+            line-height: 1.5;
+        }
+
+        /* ---------- FOOTER ---------- */
+        .site-footer {
+            background: var(--ink);
+            color: #d4d0c8;
+            padding: 3.5rem 0 2rem;
+            margin-top: 4rem;
+            border-top: 4px solid var(--accent);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 2.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .site-footer .logo a {
+            color: #f0ede8;
+            font-size: 1.6rem;
+        }
+
+        .site-footer .logo .dot {
+            color: var(--accent);
+        }
+
+        .site-footer p {
+            font-size: 0.85rem;
+            line-height: 1.7;
+            color: #a8a49c;
+            margin-top: 0.8rem;
+            max-width: 280px;
+        }
+
+        .footer-col h4 {
+            font-family: var(--font-sans);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #f0ede8;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .footer-col ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-col li {
+            margin-bottom: 0.6rem;
+        }
+
+        .footer-col a {
+            color: #a8a49c;
+            font-size: 0.85rem;
+        }
+
+        .footer-col a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #353531;
+            padding-top: 1.8rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            font-size: 0.75rem;
+            color: #8f8b84;
+        }
+
+        .footer-bottom a {
+            color: #b8b4ac;
+        }
+
+        /* ---------- RESPONSIVE ---------- */
+        @media (max-width: 1024px) {
+            .blog-layout {
+                flex-direction: column;
+                gap: 2rem;
+            }
+            .sidebar {
+                flex: 1 1 auto;
+                max-width: 100%;
+            }
+            .cookies-content {
+                padding: 1.8rem 1.5rem;
+            }
+            .cookies-table {
+                font-size: 0.8rem;
+            }
+            .cookies-table th,
+            .cookies-table td {
+                padding: 0.6rem 0.7rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .main-nav {
+                width: 100%;
+                justify-content: flex-start;
+                gap: 0.1rem;
+            }
+            .main-nav a {
+                font-size: 0.7rem;
+                padding: 0.3rem 0.6rem;
+            }
+            h1 { font-size: 1.6rem; }
+            h2 { font-size: 1.5rem; }
+            .legal-hero {
+                padding: 1.8rem 1.5rem;
+            }
+            .legal-hero h1 {
+                font-size: 1.8rem;
+            }
+            .cookies-content {
+                padding: 1.5rem 1.2rem;
+            }
+            .cookies-table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 1.8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 1rem;
+            }
+            .logo .tagline {
+                display: none;
+            }
+            .legal-hero h1 {
+                font-size: 1.5rem;
+            }
+            .button-row {
+                flex-direction: column;
+            }
+            .btn {
+                width: 100%;
+            }
+        }
+
+        .visually-hidden {
+            position: absolute;
+            width: 1px; height: 1px;
+            padding: 0; margin: -1px;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- ========== HEADER ========== -->
+    <header class="site-header" role="banner">
+        <div class="container header-inner">
+            <div class="logo">
+                <a href="index.html" aria-label="Through Design home">
+                    Through Design<span class="dot">.</span>
+                    <span class="tagline">Interior · Architecture · Craft</span>
+                </a>
+            </div>
+            <nav class="main-nav" role="navigation" aria-label="Primary">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="terms.html">Terms Of Privacy</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="cookies.html" class="active">Cookies Policy</a>
+                <a href="disclaimer.html">Disclaimer</a>
+                <a href="categories.html">Categories</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ========== MAIN ========== -->
+    <main class="container" role="main">
+        <div class="blog-layout">
+            <!-- Main content -->
+            <div class="main-content">
+                <!-- Hero -->
+                <section class="legal-hero">
+                    <h1>Cookies Policy</h1>
+                    <p>This policy explains how Through Design Journal uses cookies and similar technologies when you visit our website.</p>
+                    <div class="legal-meta">
+                        <span><strong>Last updated:</strong> 12 March 2025</span>
+                        <span><strong>Effective:</strong> 1 April 2025</span>
+                        <span><strong>Version:</strong> 2.1</span>
+                    </div>
+                </section>
+
+                <!-- Cookies content -->
+                <div class="cookies-content">
+                    <h2>1. What are cookies?</h2>
+                    <p>Cookies are small text files that are stored on your device (computer, tablet, or mobile) when you visit a website. They are widely used to make websites work more efficiently, as well as to provide information to the site owners. Cookies help us remember your preferences, understand how you interact with our content, and improve your overall reading experience.</p>
+                    <p>We also use similar technologies such as web beacons, pixels, and local storage. In this policy, we refer to all of these collectively as "cookies."</p>
+
+                    <h2>2. How we use cookies</h2>
+                    <p>Through Design Journal uses cookies for the following purposes:</p>
+                    <ul>
+                        <li><strong>Essential functionality:</strong> To ensure the website works correctly, including navigation, form submissions, and secure areas.</li>
+                        <li><strong>Preferences:</strong> To remember your settings, such as language or region, and to provide a more personalised experience.</li>
+                        <li><strong>Analytics & performance:</strong> To understand how visitors interact with our site, which pages are most popular, and how we can improve our editorial content.</li>
+                        <li><strong>Marketing & advertising:</strong> We do not run third-party ads, but we may use limited cookies to measure the reach of our newsletter or social media campaigns.</li>
+                    </ul>
+
+                    <h2>3. Types of cookies we use</h2>
+                    <p>Below is a detailed list of the cookies we currently use on Through Design Journal. We categorise them by their purpose and duration.</p>
+
+                    <table class="cookies-table">
+                        <thead>
+                            <tr>
+                                <th>Category</th>
+                                <th>Cookie name</th>
+                                <th>Purpose</th>
+                                <th>Duration</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="cat">Essential</td>
+                                <td>td_session</td>
+                                <td>Maintains your session while you browse the site, ensuring forms and navigation work correctly.</td>
+                                <td>Session</td>
+                            </tr>
+                            <tr>
+                                <td class="cat">Essential</td>
+                                <td>td_csrf</td>
+                                <td>Security token to protect against cross-site request forgery.</td>
+                                <td>1 hour</td>
+                            </tr>
+                            <tr>
+                                <td class="cat">Preferences</td>
+                                <td>td_prefs</td>
+                                <td>Stores your display preferences (e.g., font size, contrast) and consent choices.</td>
+                                <td>12 months</td>
+                            </tr>
+                            <tr>
+                                <td class="cat">Analytics</td>
+                                <td>_ga</td>
+                                <td>Google Analytics — distinguishes unique users and tracks page views anonymously.</td>
+                                <td>2 years</td>
+                            </tr>
+                            <tr>
+                                <td class="cat">Analytics</td>
+                                <td>_gid</td>
+                                <td>Google Analytics — used to distinguish users for reporting purposes.</td>
+                                <td>24 hours</td>
+                            </tr>
+                            <tr>
+                                <td class="cat">Analytics</td>
+                                <td>_gat</td>
+                                <td>Google Analytics — throttles request rate to improve performance.</td>
+                                <td>1 minute</td>
+                            </tr>
+                            <tr>
+                                <td class="cat">Marketing</td>
+                                <td>_fbp</td>
+                                <td>Used by Meta (Facebook) to measure the effectiveness of our social media campaigns.</td>
+                                <td>3 months</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="highlight-box">
+                        <strong>Note:</strong> We do not use any advertising cookies that track you across other websites, nor do we sell your data. The marketing cookies we use are strictly for measuring our own outreach and are only set with your consent.
+                    </div>
+
+                    <h2>4. Third-party cookies</h2>
+                    <p>Some cookies are placed by third-party services that appear on our pages. We use the following third parties:</p>
+                    <ul>
+                        <li><strong>Google Analytics:</strong> For anonymous traffic analysis. Their privacy policy is available at <a href="#" style="border-bottom:1px dotted var(--border-strong);">policies.google.com/privacy</a>.</li>
+                        <li><strong>Meta (Facebook):</strong> For campaign measurement. Their policy is at <a href="#" style="border-bottom:1px dotted var(--border-strong);">facebook.com/policy.php</a>.</li>
+                        <li><strong>Mailchimp:</strong> If you subscribe to our newsletter, Mailchimp may set cookies to track email engagement. Their policy is at <a href="#" style="border-bottom:1px dotted var(--border-strong);">mailchimp.com/legal/privacy</a>.</li>
+                    </ul>
+                    <p>We do not control these third-party cookies. Please refer to the respective privacy policies for more information.</p>
+
+                    <h2>5. Your choices & control</h2>
+                    <p>You have the right to decide whether to accept or reject cookies. You can manage your cookie preferences in several ways:</p>
+                    <ul>
+                        <li><strong>Browser settings:</strong> Most browsers allow you to block or delete cookies. Check your browser's help section for instructions (e.g., Chrome, Firefox, Safari, Edge).</li>
+                        <li><strong>Our consent banner:</strong> When you first visit our site, you can choose which categories of cookies to accept. You can change your mind at any time by clicking the "Cookie Preferences" link in the footer.</li>
+                        <li><strong>Opt-out tools:</strong> For Google Analytics, you can install the <a href="#" style="border-bottom:1px dotted var(--border-strong);">Google Analytics Opt-out Browser Add-on</a>.</li>
+                    </ul>
+                    <p>Please note that blocking essential cookies may affect the functionality of the website.</p>
+
+                    <h2>6. Changes to this policy</h2>
+                    <p>We may update this Cookies Policy from time to time to reflect changes in technology, legislation, or our practices. The "Last updated" date at the top of this page indicates when the policy was last revised. We encourage you to review this page periodically.</p>
+
+                    <h2>7. Contact us</h2>
+                    <p>If you have any questions about our use of cookies or this policy, please contact our data protection lead at <a href="mailto:privacy@throughdesign-journal.com" style="border-bottom:1px dotted var(--border-strong);">privacy@throughdesign-journal.com</a> or write to us at:</p>
+                    <p style="font-size:0.95rem; color:var(--ink-light);">
+                        Through Design Editorial<br>
+                        Bredgade 24, 1260 København K, Denmark
+                    </p>
+
+                    <div class="button-row">
+                        <a href="#" class="btn" onclick="event.preventDefault(); alert('Cookie preferences panel would open here (demo).');">Manage cookie preferences</a>
+                        <a href="privacy.html" class="btn btn-outline">View privacy policy</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <aside class="sidebar" role="complementary">
+                <div class="sidebar-widget">
+                    <h3>About this policy</h3>
+                    <p class="small-note" style="margin-bottom:1rem;">This policy is part of our commitment to transparency. We keep our cookie usage minimal and always put your privacy first.</p>
+                    <ul style="list-style:none; padding:0;">
+                        <li><a href="privacy.html">Privacy Policy <span class="count">→</span></a></li>
+                        <li><a href="terms.html">Terms of Use <span class="count">→</span></a></li>
+                        <li><a href="disclaimer.html">Disclaimer <span class="count">→</span></a></li>
+                        <li><a href="contact.html">Contact editorial <span class="count">→</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3>Editorial team</h3>
+                    <div class="author-info">
+                        <div class="author-avatar">E</div>
+                        <div>
+                            <div class="author-name">Elena M.</div>
+                            <div class="author-role">Editor-in-Chief</div>
+                        </div>
+                    </div>
+                    <div class="author-info">
+                        <div class="author-avatar">J</div>
+                        <div>
+                            <div class="author-name">Jonas K.</div>
+                            <div class="author-role">Privacy & Data</div>
+                        </div>
+                    </div>
+                    <p class="small-note">Our editorial team is based in Copenhagen and Milan. We take data protection seriously.</p>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3>Recent updates</h3>
+                    <ul>
+                        <li><a href="#">Cookie banner improvements <span class="count">Mar 2025</span></a></li>
+                        <li><a href="#">Privacy policy revised <span class="count">Feb 2025</span></a></li>
+                        <li><a href="#">New analytics provider <span class="count">Jan 2025</span></a></li>
+                        <li><a href="#">GDPR compliance review <span class="count">Nov 2024</span></a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="logo">
+                        <a href="index.html">Through Design<span class="dot">.</span></a>
+                    </div>
+                    <p>An independent journal about the spaces we inhabit — and the ideas that shape them. Published by a small editorial team in Copenhagen and Milan.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Sections</h4>
+                    <ul>
+                        <li><a href="#">Interior Design</a></li>
+                        <li><a href="#">Architecture</a></li>
+                        <li><a href="#">Materials</a></li>
+                        <li><a href="#">Lighting</a></li>
+                        <li><a href="#">Space Planning</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Use</a></li>
+                        <li><a href="cookies.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow</h4>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Pinterest</a></li>
+                        <li><a href="#">Flipboard</a></li>
+                        <li><a href="#">RSS Feed</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2025 Through Design Editorial. All rights reserved.</span>
+                <span><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="cookies.html">Cookies</a></span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== JAVASCRIPT ========== -->
+    <script>
+        (function() {
+            // Smooth scroll for logo link if it points to index.html (kept as a gentle behavior)
+            document.querySelector('.logo a')?.addEventListener('click', function(e) {
+                if (this.getAttribute('href') === 'index.html') {
+                    // let the browser navigate normally
+                    return;
+                }
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+            // Demo function for cookie preferences button
+            const prefButton = document.querySelector('.btn[onclick*="Cookie preferences"]');
+            if (prefButton) {
+                // already handled inline
+            }
+
+            // Optional: highlight active nav link based on current page
+            // (already set in HTML, but this ensures consistency)
+        })();
+    </script>
+</body>
+</html>

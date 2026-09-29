@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Use · Through Design Journal</title>
+    <meta name="description" content="Terms of Use for Through Design — an independent editorial journal covering interior design, architecture, materials, and the art of living well.">
+    <meta name="keywords" content="terms of use, through design, editorial terms, legal, website terms, interior design journal">
+    <meta name="author" content="Through Design Editorial">
+    <link rel="canonical" href="https://www.throughdesign-journal.com/terms.html">
+    <style>
+        /* ---------- RESET & BASE ---------- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --paper: #faf8f5;
+            --ink: #1e1e1c;
+            --ink-light: #3d3d3a;
+            --accent: #b45f3a;
+            --accent-soft: #e8d9cf;
+            --border: #e3ddd6;
+            --border-strong: #cfc7bd;
+            --gray-bg: #f2efea;
+            --font-serif: 'Georgia', 'Times New Roman', 'Palatino', serif;
+            --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            --max-width: 1280px;
+            --content-width: 720px;
+            --radius: 4px;
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.03);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--paper);
+            color: var(--ink);
+            font-family: var(--font-sans);
+            font-size: 1rem;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+            border-top: 5px solid var(--accent);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            color: var(--ink);
+            text-decoration: none;
+            transition: color 0.15s ease, border-color 0.15s ease;
+        }
+
+        a:hover {
+            color: var(--accent);
+        }
+
+        ul, ol {
+            padding-left: 1.4rem;
+        }
+
+        /* ---------- TYPOGRAPHY ---------- */
+        h1, h2, h3, h4 {
+            font-family: var(--font-serif);
+            font-weight: 400;
+            line-height: 1.25;
+            letter-spacing: -0.01em;
+            color: var(--ink);
+        }
+
+        h1 {
+            font-size: 2.6rem;
+            margin-bottom: 0.8rem;
+        }
+
+        h2 {
+            font-size: 1.9rem;
+            margin: 2.2rem 0 1rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.4rem;
+        }
+
+        h3 {
+            font-size: 1.35rem;
+            margin: 1.8rem 0 0.6rem;
+        }
+
+        h4 {
+            font-size: 1.1rem;
+            margin: 1.5rem 0 0.4rem;
+            font-family: var(--font-sans);
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+        }
+
+        blockquote {
+            border-left: 3px solid var(--accent);
+            padding-left: 1.4rem;
+            margin: 1.8rem 0;
+            font-family: var(--font-serif);
+            font-size: 1.15rem;
+            font-style: italic;
+            color: var(--ink-light);
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 2rem 0;
+        }
+
+        /* ---------- LAYOUT ---------- */
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .legal-layout {
+            display: flex;
+            gap: 3rem;
+            margin-top: 2.5rem;
+        }
+
+        .main-content {
+            flex: 1 1 68%;
+            min-width: 0;
+        }
+
+        .sidebar {
+            flex: 0 0 320px;
+            max-width: 320px;
+        }
+
+        /* ---------- HEADER ---------- */
+        .site-header {
+            border-bottom: 1px solid var(--border);
+            background: var(--paper);
+            padding: 0.9rem 0;
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .logo a {
+            display: flex;
+            align-items: baseline;
+            gap: 0.2rem;
+            font-family: var(--font-serif);
+            font-size: 1.8rem;
+            font-weight: 400;
+            letter-spacing: -0.02em;
+            color: var(--ink);
+        }
+
+        .logo .dot {
+            color: var(--accent);
+            font-size: 2.2rem;
+            line-height: 0.8;
+        }
+
+        .logo .tagline {
+            font-family: var(--font-sans);
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--ink-light);
+            margin-left: 0.5rem;
+            font-weight: 400;
+            opacity: 0.8;
+        }
+
+        .main-nav {
+            display: flex;
+            align-items: center;
+            gap: 0.2rem;
+            flex-wrap: wrap;
+        }
+
+        .main-nav a {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--ink-light);
+            padding: 0.35rem 0.9rem;
+            border-radius: 40px;
+            font-weight: 500;
+            border: 1px solid transparent;
+        }
+
+        .main-nav a:hover,
+        .main-nav a.active {
+            background: var(--gray-bg);
+            color: var(--ink);
+            border-color: var(--border);
+        }
+
+        /* ---------- LEGAL HERO ---------- */
+        .legal-hero {
+            background: var(--gray-bg);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 3rem 2.5rem;
+            margin: 2rem 0 1rem;
+            text-align: center;
+        }
+
+        .legal-hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .legal-hero .subhead {
+            font-family: var(--font-serif);
+            font-size: 1.2rem;
+            font-style: italic;
+            color: var(--ink-light);
+            max-width: 620px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .legal-meta {
+            font-size: 0.8rem;
+            color: var(--ink-light);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-top: 1.2rem;
+            opacity: 0.8;
+        }
+
+        /* ---------- LEGAL CONTENT ---------- */
+        .legal-content {
+            font-size: 1rem;
+        }
+
+        .legal-content h2 {
+            margin-top: 2.5rem;
+            font-size: 1.7rem;
+        }
+
+        .legal-content h3 {
+            font-size: 1.2rem;
+            margin: 1.8rem 0 0.5rem;
+            font-family: var(--font-sans);
+            font-weight: 600;
+            letter-spacing: 0;
+        }
+
+        .legal-content ul,
+        .legal-content ol {
+            margin-bottom: 1.2rem;
+            padding-left: 1.8rem;
+        }
+
+        .legal-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .legal-content .legal-note {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1.2rem 1.5rem;
+            margin: 1.5rem 0;
+            font-size: 0.95rem;
+            color: var(--ink-light);
+        }
+
+        .legal-content .legal-note strong {
+            color: var(--ink);
+        }
+
+        .legal-content .section-number {
+            color: var(--accent);
+            font-weight: 600;
+            margin-right: 0.3rem;
+        }
+
+        /* ---------- SIDEBAR ---------- */
+        .sidebar-widget {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1.5rem 1.4rem;
+            margin-bottom: 2rem;
+        }
+
+        .sidebar-widget h3 {
+            font-family: var(--font-sans);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: 600;
+            color: var(--ink-light);
+            margin: 0 0 1rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.5rem;
+        }
+
+        .sidebar-widget ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar-widget li {
+            margin-bottom: 0.7rem;
+            font-size: 0.9rem;
+            border-bottom: 1px dotted var(--border);
+            padding-bottom: 0.7rem;
+        }
+
+        .sidebar-widget li:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .sidebar-widget li a {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            color: var(--ink);
+        }
+
+        .sidebar-widget li a:hover {
+            color: var(--accent);
+        }
+
+        .sidebar-widget .count {
+            font-size: 0.7rem;
+            color: #8f8f88;
+        }
+
+        .sidebar-widget .small-note {
+            font-size: 0.8rem;
+            color: var(--ink-light);
+            margin-top: 0.5rem;
+            line-height: 1.5;
+        }
+
+        .sidebar-widget .newsletter-mini input {
+            width: 100%;
+            padding: 0.6rem 0.8rem;
+            border: 1px solid var(--border-strong);
+            border-radius: var(--radius);
+            font-size: 0.85rem;
+            margin-bottom: 0.5rem;
+            font-family: var(--font-sans);
+        }
+
+        .sidebar-widget .newsletter-mini button {
+            width: 100%;
+            background: var(--ink);
+            color: white;
+            border: none;
+            padding: 0.6rem;
+            border-radius: var(--radius);
+            font-size: 0.8rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            cursor: pointer;
+            font-weight: 500;
+            transition: background 0.15s;
+        }
+
+        .sidebar-widget .newsletter-mini button:hover {
+            background: var(--accent);
+        }
+
+        /* ---------- FOOTER ---------- */
+        .site-footer {
+            background: var(--ink);
+            color: #d4d0c8;
+            padding: 3.5rem 0 2rem;
+            margin-top: 4rem;
+            border-top: 4px solid var(--accent);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 2.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .site-footer .logo a {
+            color: #f0ede8;
+            font-size: 1.6rem;
+        }
+
+        .site-footer .logo .dot {
+            color: var(--accent);
+        }
+
+        .site-footer p {
+            font-size: 0.85rem;
+            line-height: 1.7;
+            color: #a8a49c;
+            margin-top: 0.8rem;
+            max-width: 280px;
+        }
+
+        .footer-col h4 {
+            font-family: var(--font-sans);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #f0ede8;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .footer-col ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-col li {
+            margin-bottom: 0.6rem;
+        }
+
+        .footer-col a {
+            color: #a8a49c;
+            font-size: 0.85rem;
+        }
+
+        .footer-col a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #353531;
+            padding-top: 1.8rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            font-size: 0.75rem;
+            color: #8f8b84;
+        }
+
+        .footer-bottom a {
+            color: #b8b4ac;
+        }
+
+        /* ---------- RESPONSIVE ---------- */
+        @media (max-width: 1024px) {
+            .legal-layout {
+                flex-direction: column;
+                gap: 2rem;
+            }
+            .sidebar {
+                flex: 1 1 auto;
+                max-width: 100%;
+            }
+            .legal-hero {
+                padding: 2.5rem 1.5rem;
+            }
+            .legal-hero h1 {
+                font-size: 2.2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .main-nav {
+                width: 100%;
+                justify-content: flex-start;
+                gap: 0.1rem;
+            }
+            .main-nav a {
+                font-size: 0.7rem;
+                padding: 0.3rem 0.6rem;
+            }
+            h1 { font-size: 1.8rem; }
+            h2 { font-size: 1.5rem; }
+            .legal-hero h1 { font-size: 1.8rem; }
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 1.8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 1rem;
+            }
+            .logo .tagline {
+                display: none;
+            }
+            .legal-content .legal-note {
+                padding: 1rem;
+            }
+        }
+
+        .visually-hidden {
+            position: absolute;
+            width: 1px; height: 1px;
+            padding: 0; margin: -1px;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- ========== HEADER ========== -->
+    <header class="site-header" role="banner">
+        <div class="container header-inner">
+            <div class="logo">
+                <a href="index.html" aria-label="Through Design home">
+                    Through Design<span class="dot">.</span>
+                    <span class="tagline">Interior · Architecture · Craft</span>
+                </a>
+            </div>
+            <nav class="main-nav" role="navigation" aria-label="Primary">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="terms.html" class="active">Terms Of Privacy</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="cookies.html">Cookies Policy</a>
+                <a href="disclaimer.html">Disclaimer</a>
+                <a href="categories.html">Categories</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ========== MAIN ========== -->
+    <main class="container" role="main">
+        <!-- LEGAL HERO -->
+        <section class="legal-hero">
+            <h1>Terms of Use</h1>
+            <p class="subhead">Please read these terms carefully before using Through Design. By accessing our site, you agree to be bound by them.</p>
+            <p class="legal-meta">Last updated: 1 April 2025</p>
+        </section>
+
+        <!-- LEGAL LAYOUT: MAIN + SIDEBAR -->
+        <div class="legal-layout">
+            <!-- MAIN COLUMN -->
+            <div class="main-content legal-content">
+                <section aria-label="Introduction">
+                    <h2>1. Introduction</h2>
+                    <p>Welcome to <strong>Through Design</strong> (“we”, “us”, “our”), an independent editorial journal published by Through Design Editorial, with editorial offices in Copenhagen, Denmark, and Milan, Italy. These Terms of Use (“Terms”) govern your access to and use of the website located at <a href="https://www.throughdesign-journal.com">www.throughdesign-journal.com</a> (the “Site”), including all content, features, and services offered on or through the Site.</p>
+                    <p>By accessing, browsing, or using the Site, you acknowledge that you have read, understood, and agree to be bound by these Terms and our <a href="privacy.html">Privacy Policy</a>. If you do not agree to these Terms, you must not use the Site.</p>
+                    <div class="legal-note">
+                        <strong>Note:</strong> These Terms apply to all visitors, readers, subscribers, and contributors. We may update these Terms from time to time; the date of the most recent revision is shown above. Your continued use of the Site after changes are posted constitutes your acceptance of the revised Terms.
+                    </div>
+                </section>
+
+                <section aria-label="Use of content">
+                    <h2>2. Use of Content</h2>
+                    <p>All content on the Site — including articles, essays, photographs, illustrations, graphics, data, and code — is the property of Through Design Editorial or its content suppliers and is protected by international copyright, trademark, and other intellectual property laws.</p>
+                    <h3>2.1 Permitted Use</h3>
+                    <p>You may:</p>
+                    <ul>
+                        <li>Read, view, and browse the Site for personal, non-commercial purposes.</li>
+                        <li>Share links to our articles on social media or via email, provided you do not imply endorsement or affiliation.</li>
+                        <li>Quote short excerpts (up to 100 words) of our articles for non-commercial commentary, criticism, or news reporting, provided you attribute the quote to Through Design with a link to the original article.</li>
+                        <li>Download or print a single copy of individual pages for your own personal, non-commercial use, provided you do not remove any copyright or proprietary notices.</li>
+                    </ul>
+                    <h3>2.2 Prohibited Use</h3>
+                    <p>You may not:</p>
+                    <ul>
+                        <li>Reproduce, republish, distribute, sell, or exploit any content from the Site for commercial purposes without our prior written consent.</li>
+                        <li>Modify, adapt, translate, reverse-engineer, or create derivative works based on any content from the Site.</li>
+                        <li>Use any automated system, including “robots”, “spiders”, or “offline readers”, to access the Site in a manner that sends more request messages than a human can reasonably produce in the same period.</li>
+                        <li>Interfere with or disrupt the Site or servers or networks connected to the Site, or disobey any requirements, procedures, policies, or regulations of networks connected to the Site.</li>
+                        <li>Collect or harvest any personally identifiable information from the Site.</li>
+                    </ul>
+                </section>
+
+                <section aria-label="User submissions">
+                    <h2>3. User Submissions</h2>
+                    <p>We welcome comments, questions, and story ideas. However, we do not accept unsolicited manuscripts or article submissions. If you submit any material to us — including via email, contact forms, or comments — you grant us a non-exclusive, royalty-free, perpetual, irrevocable, and fully sublicensable right to use, reproduce, modify, adapt, publish, translate, create derivative works from, distribute, and display such material throughout the world in any media.</p>
+                    <p>You represent and warrant that:</p>
+                    <ul>
+                        <li>You own or control all rights to the material you submit.</li>
+                        <li>The material is accurate and not misleading.</li>
+                        <li>The material does not violate any third-party rights, including copyright, trademark, privacy, or publicity rights.</li>
+                        <li>The material does not contain any unlawful, abusive, defamatory, or obscene content.</li>
+                    </ul>
+                </section>
+
+                <section aria-label="Newsletter and subscriptions">
+                    <h2>4. Newsletter and Subscriptions</h2>
+                    <p>Through Design offers an optional email newsletter (“The Dispatch”) and other subscription services. By subscribing, you consent to receive periodic emails from us. You may unsubscribe at any time by clicking the “unsubscribe” link at the bottom of any newsletter or by contacting us.</p>
+                    <p>We will not share your email address with third parties except as necessary to deliver the newsletter (e.g., our email service provider) or as required by law. Please see our <a href="privacy.html">Privacy Policy</a> for more details.</p>
+                </section>
+
+                <section aria-label="Third-party links">
+                    <h2>5. Third-Party Links and Resources</h2>
+                    <p>The Site may contain links to third-party websites, resources, and services. These links are provided for your convenience and do not imply endorsement by Through Design. We have no control over the content, privacy policies, or practices of third-party sites and accept no responsibility for them. You access third-party sites at your own risk.</p>
+                </section>
+
+                <section aria-label="Affiliate disclosure">
+                    <h2>6. Affiliate Disclosure</h2>
+                    <p>Through Design participates in affiliate programs with independent bookshops and select material suppliers. This means that if you click on certain links to products and make a purchase, we may earn a small commission at no additional cost to you. We only link to products we genuinely believe are relevant and useful to our readers. Our editorial content is never influenced by affiliate partnerships, and we do not accept payment for reviews or features.</p>
+                </section>
+
+                <section aria-label="Disclaimer of warranties">
+                    <h2>7. Disclaimer of Warranties</h2>
+                    <p>The Site and all content are provided on an “as is” and “as available” basis. Through Design makes no representations or warranties of any kind, express or implied, as to the operation of the Site or the information, content, materials, or products included on the Site. To the fullest extent permissible by applicable law, we disclaim all warranties, express or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, and non-infringement.</p>
+                    <p>We do not warrant that the Site will be uninterrupted, error-free, or free of viruses or other harmful components. You are responsible for implementing sufficient procedures and checkpoints to satisfy your particular requirements for accuracy of data input and output.</p>
+                </section>
+
+                <section aria-label="Limitation of liability">
+                    <h2>8. Limitation of Liability</h2>
+                    <p>To the fullest extent permitted by law, Through Design and its editors, contributors, and affiliates shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from:</p>
+                    <ul>
+                        <li>Your access to or use of, or inability to access or use, the Site.</li>
+                        <li>Any conduct or content of any third party on the Site.</li>
+                        <li>Any content obtained from the Site.</li>
+                        <li>Unauthorized access, use, or alteration of your transmissions or content.</li>
+                    </ul>
+                    <p>In no event shall our total liability to you for all claims arising out of or relating to these Terms or your use of the Site exceed one hundred euros (€100).</p>
+                </section>
+
+                <section aria-label="Indemnification">
+                    <h2>9. Indemnification</h2>
+                    <p>You agree to indemnify, defend, and hold harmless Through Design and its editors, contributors, and affiliates from and against any and all claims, damages, losses, liabilities, costs, and expenses (including reasonable legal fees) arising out of or relating to your violation of these Terms or your use of the Site.</p>
+                </section>
+
+                <section aria-label="Governing law">
+                    <h2>10. Governing Law and Jurisdiction</h2>
+                    <p>These Terms shall be governed by and construed in accordance with the laws of Denmark, without regard to its conflict of law provisions. Any dispute arising out of or relating to these Terms or the Site shall be subject to the exclusive jurisdiction of the courts of Copenhagen, Denmark.</p>
+                </section>
+
+                <section aria-label="Changes to terms">
+                    <h2>11. Changes to These Terms</h2>
+                    <p>We may revise these Terms at any time by posting the updated version on the Site. The date of the most recent revision will be indicated at the top of this page. Your continued use of the Site after changes are posted constitutes your acceptance of the revised Terms. We encourage you to review these Terms periodically.</p>
+                </section>
+
+                <section aria-label="Contact">
+                    <h2>12. Contact Information</h2>
+                    <p>If you have any questions about these Terms, please <a href="contact.html">contact us</a> or write to:</p>
+                    <p style="font-size:0.95rem; color:var(--ink-light);">
+                        Through Design Editorial<br>
+                        Attn: Legal<br>
+                        Bredgade 24, 2nd Floor<br>
+                        1260 Copenhagen K<br>
+                        Denmark
+                    </p>
+                    <p style="font-size:0.95rem; color:var(--ink-light);">Email: <a href="mailto:legal@throughdesign-journal.com">legal@throughdesign-journal.com</a></p>
+                </section>
+
+                <hr>
+                <p style="font-size:0.85rem; color:var(--ink-light); font-style:italic;">These Terms of Use were last updated on 1 April 2025 and are effective immediately.</p>
+            </div>
+
+            <!-- SIDEBAR -->
+            <aside class="sidebar" role="complementary">
+                <!-- Legal quick links -->
+                <div class="sidebar-widget">
+                    <h3>On This Page</h3>
+                    <ul>
+                        <li><a href="#1-introduction">1. Introduction</a></li>
+                        <li><a href="#2-use-of-content">2. Use of Content</a></li>
+                        <li><a href="#3-user-submissions">3. User Submissions</a></li>
+                        <li><a href="#4-newsletter-and-subscriptions">4. Newsletter &amp; Subscriptions</a></li>
+                        <li><a href="#5-third-party-links-and-resources">5. Third-Party Links</a></li>
+                        <li><a href="#6-affiliate-disclosure">6. Affiliate Disclosure</a></li>
+                        <li><a href="#7-disclaimer-of-warranties">7. Disclaimer of Warranties</a></li>
+                        <li><a href="#8-limitation-of-liability">8. Limitation of Liability</a></li>
+                        <li><a href="#9-indemnification">9. Indemnification</a></li>
+                        <li><a href="#10-governing-law-and-jurisdiction">10. Governing Law</a></li>
+                        <li><a href="#11-changes-to-these-terms">11. Changes to These Terms</a></li>
+                        <li><a href="#12-contact-information">12. Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Related legal -->
+                <div class="sidebar-widget">
+                    <h3>Related Policies</h3>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy <span class="count">→</span></a></li>
+                        <li><a href="cookies.html">Cookie Policy <span class="count">→</span></a></li>
+                        <li><a href="disclaimer.html">Disclaimer <span class="count">→</span></a></li>
+                        <li><a href="about.html">About Us <span class="count">→</span></a></li>
+                    </ul>
+                </div>
+
+                <!-- Mini newsletter -->
+                <div class="sidebar-widget newsletter-mini">
+                    <h3>Weekly Digest</h3>
+                    <p class="small-note" style="margin-bottom:0.8rem;">One thoughtful email each Sunday.</p>
+                    <form onsubmit="event.preventDefault(); alert('Subscribed (demo).');">
+                        <input type="email" placeholder="Email address" required aria-label="Email">
+                        <button type="submit">Join</button>
+                    </form>
+                </div>
+
+                <!-- Contact note -->
+                <div class="sidebar-widget">
+                    <h3>Questions?</h3>
+                    <p class="small-note">We welcome reader questions about our terms. <a href="contact.html">Contact the editors →</a></p>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="logo">
+                        <a href="index.html">Through Design<span class="dot">.</span></a>
+                    </div>
+                    <p>An independent journal about the spaces we inhabit — and the ideas that shape them. Published by a small editorial team in Copenhagen and Milan.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Sections</h4>
+                    <ul>
+                        <li><a href="index.html">Interior Design</a></li>
+                        <li><a href="index.html">Architecture</a></li>
+                        <li><a href="index.html">Materials</a></li>
+                        <li><a href="index.html">Lighting</a></li>
+                        <li><a href="index.html">Space Planning</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Use</a></li>
+                        <li><a href="cookies.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow</h4>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Pinterest</a></li>
+                        <li><a href="#">Flipboard</a></li>
+                        <li><a href="#">RSS Feed</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2025 Through Design Editorial. All rights reserved.</span>
+                <span><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="cookies.html">Cookies</a></span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Simple script -->
+    <script>
+        (function() {
+            // Smooth scroll for in-page navigation (already handled by CSS, but just in case)
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href === '#') return;
+                    const target = document.querySelector(href);
+                    if (target) {
+                        e.preventDefault();
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            });
+            console.log('Through Design · Terms page loaded');
+        })();
+    </script>
+</body>
+</html>
